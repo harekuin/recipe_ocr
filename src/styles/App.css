@@ -1,0 +1,292 @@
+.App {
+  text-align: center;
+}
+
+.App img {
+  height: 25vmin;
+  pointer-events: none;
+  max-width: 50vh;
+  max-height: 50vh;
+}
+
+.App header {
+  padding-top: 5vh;
+  background-color: #ffbb99;
+  min-height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App link {
+  color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  /* padding-top: 20px; */
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 520px;
+  min-height: 100px;
+  background: #ffbb99;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.todo form {
+  margin-bottom: 32px;
+}
+
+.todo input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #fff2e6;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff2e6;
+}
+
+.todo input::-webkit-input-placeholder {
+  color: #fff2e6;
+}
+
+.todo input:-ms-input-placeholder {
+  color: #fff2e6;
+}
+
+.todo input::-ms-input-placeholder {
+  color: #fff2e6;
+}
+
+.todo input::placeholder {
+  color: #fff2e6;
+}
+
+.todo button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  color: #ffbb99;
+  text-transform: capitalize;
+}
+
+.todo row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd9b3), to(#e76f51));
+  background: linear-gradient(90deg, #ffd9b3 0%, #e76f51 100%);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo row:nth-child(4n + 1) {
+  background: -webkit-gradient(linear, left top, right top, from(#e9c46a), to(#f4a261));
+  background: linear-gradient(90deg, #e9c46a 0%, #f4a261 100%);
+}
+
+.todo row:nth-child(4n + 2) {
+  background: -webkit-gradient(linear, left top, right top, from(#71dada), to(#2a9d8f));
+  background: linear-gradient(90deg, #71dada 0%, #2a9d8f 100%);
+}
+
+.todo row:nth-child(4n + 3) {
+  background: -webkit-gradient(linear, left top, right top, from(#117aff), to(#264653));
+  background: linear-gradient(90deg, #117aff 0%, #264653 100%);
+}
+
+.todo input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo button.edit {
+  background: -webkit-gradient(linear, left top, right top, from(#149fff), to(#117aff));
+  background: linear-gradient(90deg, #149fff 0%, #117aff 100%);
+  padding: 16px 22px;
+}
+
+.todo container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.crop button {
+  top: 20px;
+  position: relative;
+  padding: 16px;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+  outline: none;
+  color: #ffbb99;
+  text-transform: capitalize;
+}
+
+.crop button:hover {
+  background-color: #e76f51;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.icons delete {
+  margin-right: 5px;
+}
+
+.return-icon {
+  border-radius: 4px 4px 4px 4px;
+  color: #fff;
+  margin: 10px;
+  float: left;
+}
+
+.return-icon:hover {
+  background-color: #e76f51;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  top: 20px;
+  position: relative;
+  font-size: 1.25em;
+  color: #ffbb99;
+  display: inline-block;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 4px 4px 4px;
+  outline: none;
+  width: 300px;
+  background: #fff2e6;
+}
+
+.inputfile:focus + label, .inputfile + label:hover {
+  background-color: #e76f51;
+}
+
+.ReactCrop {
+  top: 4vh;
+}
+
+.flexcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=App.css.map */

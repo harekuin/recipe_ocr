@@ -1,0 +1,21 @@
+.ReactCrop{
+    top:4vh;
+  }
+  
+  .crop-button{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      top:20px;
+      position: relative;
+      padding: 16px;
+      border: none;
+      border-radius: 4px 4px 4px 4px;
+      cursor: pointer;
+      outline: none;
+      color: $backgroundColor;
+      background-color: $accentColor;
+      text-transform: capitalize;
+      &:hover {
+          background-color: $primaryColor;
+        }
+  }
